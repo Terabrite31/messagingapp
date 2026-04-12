@@ -1,0 +1,33 @@
+body {
+   background: linear-gradient(to right, rgb(193, 193, 205), rgb(118, 118, 176));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+}
+
+#square {
+   position: relative;
+   height: 300px;
+   width: 250px;
+   background: linear-gradient(to bottom, rgb(255, 19, 19), rgb(247, 64, 232));
+   border-radius: 20px;
+}
+
+#inputemail {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    height: 10px;
+    width: 100px;
+
+}
+
+#inputpassword {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    height: 10px;
+    width: 100px;
+}
