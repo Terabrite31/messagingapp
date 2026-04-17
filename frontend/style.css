@@ -1,5 +1,5 @@
 body {
-   background: linear-gradient(to right, rgb(193, 193, 205), rgb(118, 118, 176));
+   background: linear-gradient(to right, rgb(255, 255, 0), rgb(0, 0, 0));
    display: flex;
    justify-content: center;
    align-items: center;
@@ -9,8 +9,8 @@ body {
 
 #square {
    position: relative;
-   height: 300px;
-   width: 250px;
+   height: 550px;
+   width: 500px;
    background: linear-gradient(to bottom, rgb(255, 19, 19), rgb(247, 64, 232));
    border-radius: 20px;
 }
