@@ -7,6 +7,12 @@ body {
 
 }
 
+#chicken {
+    position: absolute;
+    font-size: 100px;
+    
+}
+
 #square {
    position: relative;
    height: 550px;
