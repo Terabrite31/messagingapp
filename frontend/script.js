@@ -1,4 +1,4 @@
-let chicken = document.getElementById("");
+let chicken = document.getElementById("chicken");
 let inputemail = document.getElementById("inputemail");
 let inputpassword = document.getElementById("inputpassword");
 let button = document.getElementById("button");
