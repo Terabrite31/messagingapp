@@ -1,10 +1,52 @@
 body {
-   background: linear-gradient(to right, rgb(255, 255, 0), rgb(0, 0, 0));
+   background: linear-gradient(to bottom, rgb(66, 205, 205), rgb(249, 249, 249));
    display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
 
+}
+
+#signin {
+    position: absolute;
+    left: 300px;
+    top: 470px;
+}
+
+#button {
+    position: absolute;
+    top: 355px;
+    left: 190px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: pink;
+}
+
+#email {
+    left: 30px;
+    top: 290px;
+    position: absolute;
+}
+
+#password {
+    left: 20px;
+    top: 390px;
+    position: absolute;
+}
+
+#headertext {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    z-index: 5;
+}
+
+#header {
+    position: absolute;
+    background-color: rgb(255, 247, 97);
+    width: 5000px;
+    height: 50px;
+    top: 0px;
 }
 
 #chicken {
@@ -15,25 +57,25 @@ body {
 
 #square {
    position: relative;
-   height: 550px;
-   width: 500px;
-   background: linear-gradient(to bottom, rgb(255, 19, 19), rgb(247, 64, 232));
+   height: 650px;
+   width: 600px;
+   background: linear-gradient(to bottom, rgb(213, 13, 173), rgb(202, 185, 200));
    border-radius: 20px;
 }
 
 #inputemail {
     position: absolute;
-    top: 60px;
-    left: 30px;
-    height: 10px;
-    width: 100px;
+    top: 300px;
+    left: 90px;
+    height: 30px;
+    width: 250px;
 
 }
 
 #inputpassword {
     position: absolute;
-    top: 100px;
-    left: 30px;
-    height: 10px;
-    width: 100px;
+    top: 400px;
+    left: 90px;
+    height: 30px;
+    width: 250px;
 }
