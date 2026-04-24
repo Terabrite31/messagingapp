@@ -3,7 +3,7 @@ let inputemail = document.getElementById("inputemail");
 let inputpassword = document.getElementById("inputpassword");
 let button = document.getElementById("button");
 
-let inputverifaction = document.getElementById("inputverification");
+let inputverification = document.getElementById("inputverification");
 inputverification.style.display = "none";
 let verify = document.getElementById("verify");
 verify.style.display = "none";
@@ -30,3 +30,20 @@ async function request() {
 }
 
 button.onclick = request;
+
+async function request2() {
+  let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/api2", {
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+    email:inputemail.value,
+    password:inputpassword.value,
+    code:inputverification.value
+    })
+  });
+  chicken.textContent = await res.json();
+}
+
+verify.onclick = request2;
