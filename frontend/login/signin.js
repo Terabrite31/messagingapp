@@ -8,10 +8,10 @@ async function sendData() {
     headers:{
         "Content-Type":"application/json"
     },
-    body:JSON.stringify({
-        name: inputemail.value,
-        password: inputemailpassword.value
-    })
+   body: JSON.stringify({
+  email: inputemail.value,
+  password: inputpassword.value
+})
 
     })
     let data = await res.json()
