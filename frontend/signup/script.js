@@ -46,7 +46,8 @@ async function request2() {
   chicken.textContent = await res.json();
   if (chicken.textContent == "created") {
     window.location.href = "/frontend/signin.html";
+  } 
   }
-}
+
 
 verify.onclick = request2;
