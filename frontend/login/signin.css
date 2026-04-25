@@ -7,6 +7,13 @@ body {
 
 }
 
+#status {
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    background-color: white;
+}
+
 #signin {
     position: absolute;
     left: 300px;
