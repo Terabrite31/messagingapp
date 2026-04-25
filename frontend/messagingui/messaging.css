@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to right, rgb(224, 230, 184), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#left {
+    position: absolute;
+    left: 3px;
+    background-color: rgb(170, 231, 255);
+    width: 435px;
+    height: 1050px;
+    top:0px;
+    border-radius: 30px;
+}
+
+#right {
+    position: fixed;
+    height: 759px;
+    width: 1030px;
+    top:0px;
+    background-color: rgb(247, 158, 224);
+    margin-left:440px;
+    border-radius: 30px;
+}
+
+#name {
+    position: absolute;
+    background-color: white;
+    width: 220px;
+    height: 50px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 30px;
+    top:-10px;
+}
+
+#add {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    justify-content: center; 
+    align-items: center;   
+    display: flex;
+    border-radius: 30px;
+}

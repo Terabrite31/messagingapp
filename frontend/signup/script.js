@@ -2,6 +2,7 @@ let chicken = document.getElementById("chicken");
 let inputemail = document.getElementById("inputemail");
 let inputpassword = document.getElementById("inputpassword");
 let button = document.getElementById("button");
+let inputusername = document.getElementById("inputusername")
 
 let inputverification = document.getElementById("inputverification");
 inputverification.style.display = "none";
@@ -18,6 +19,7 @@ async function request() {
       "Content-Type":"application/json"
     },
     body:JSON.stringify({
+    username:inputusername.value,
     email:inputemail.value,
     password:inputpassword.value
     })
@@ -38,6 +40,7 @@ async function request2() {
       "Content-Type":"application/json"
     },
     body:JSON.stringify({
+    email:inputusername.value,
     email:inputemail.value,
     password:inputpassword.value,
     code:inputverification.value

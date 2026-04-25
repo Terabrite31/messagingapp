@@ -51,6 +51,12 @@ body {
     position: absolute;
 }
 
+#username {
+    left: 20px;
+    top: 190px;
+    position: absolute;
+}
+
 #headertext {
     position: absolute;
     font-size: 30px;
@@ -78,6 +84,15 @@ body {
    width: 600px;
    background: linear-gradient(to bottom, rgb(213, 13, 173), rgb(202, 185, 200));
    border-radius: 20px;
+}
+
+#inputusername {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    height: 40px;
+    width: 290px;
+    font-size: 20px;
 }
 
 #inputverification {
