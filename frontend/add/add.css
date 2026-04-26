@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(159, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#left {
+    position: fixed;
+    height: 747px;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    left: 8px;
+    top: 2px;
+    border-radius: 20px;
+}
+
+#back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 70px;
+}
+
+#inputemail {
+    position: absolute;
+    top: 350px;
+    left: 140px;
+    height: 40px;
+    width: 300px;
+
+}
+
+#button {
+    position: absolute;
+    top: 350px;
+    left: 490px;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+
+#right {
+    position: fixed;
+    height: 747px;
+    width: 800px;
+    background-color: white;
+    margin-left: 665px;
+    top: 2px;
+    border-radius: 20px;
+
+}
