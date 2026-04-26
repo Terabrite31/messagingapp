@@ -40,7 +40,7 @@ async function request2() {
       "Content-Type":"application/json"
     },
     body:JSON.stringify({
-    email:inputusername.value,
+    username:inputusername.value,
     email:inputemail.value,
     password:inputpassword.value,
     code:inputverification.value
