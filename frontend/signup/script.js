@@ -26,9 +26,11 @@ async function request() {
   });
 
   chicken.textContent = await res.json();
+  if (chicken.textContent != "email already exists") {
   inputverification.style.display = "block";
   verify.style.display = "block";
   verification.style.display = "block";
+  }
 }
 
 button.onclick = request;
