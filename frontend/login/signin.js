@@ -1,7 +1,7 @@
 let inputemail = document.getElementById("inputemail");
 let inputpassword = document.getElementById("inputpassword");
 let button = document.getElementById("button");
-let status = document.getElementById("status");
+let statuss = document.getElementById("status");
 
 async function sendData() {
     let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/loginapi", {
@@ -17,11 +17,17 @@ async function sendData() {
     })
     let data = await res.json()
 
-    if (data == "correct") {
+    let status = data.status;
+    let username = data.username;
+
+    if (status == "correct") {
         localStorage.setItem("userEmail", inputemail.value);
+        localStorage.setItem("userPassword", inputpassword.value);
+        localStorage.setItem("userUsername", username);
+
         window.location.href = "/frontend/messagingui/messaging.html";
     } else {
-        status.textContent = "wrong email or password try again";
+        statuss.textContent = "wrong email or password try again";
 
     }
 }
