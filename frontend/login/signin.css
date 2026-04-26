@@ -7,6 +7,12 @@ body {
 
 }
 
+#direct {
+    position: absolute;
+    top: 480px;
+    left: 320px;
+}
+
 #status {
     position: absolute;
     top: 240px;
