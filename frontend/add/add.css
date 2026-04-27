@@ -104,14 +104,14 @@ body {
 
 .Rbutton {
     position: absolute;
-    top: 20px;
+    top: 38px;
     left: 400px;
     background-color: red;
 }
 
 .Abutton {
     position: absolute;
-    top: 20px;
+    top: 38px;
     left: 430px;
     background-color: green;
 }
