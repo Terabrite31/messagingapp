@@ -17,6 +17,13 @@ body {
     border-radius: 20px;
 }
 
+#status {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    background-color: white;
+}
+
 #email {
     position: absolute;
     top: 330px;

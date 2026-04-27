@@ -15,7 +15,7 @@ async function sendData() {
 })
 
     })
-    let data = await res.json()
+    let data = await res.json();
 
     let status = data.status;
     let username = data.username;
