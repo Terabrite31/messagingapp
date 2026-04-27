@@ -98,7 +98,7 @@ body {
 .name {
     position: absolute;
     font-size: 27px;
-    top: -30px;
+    top: 0px;
     left: 40px;
 }
 
