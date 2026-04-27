@@ -17,7 +17,7 @@ body:JSON.stringify({
 })
 })
 let data = await res.json();
-if (data == "email doesnt exists") {
+if (data == "the email doesnt exists") {
    status.textContent = "email doesnt exists";
 } else if(data == "sent") {
     status.textContent = "sent";
