@@ -1,7 +1,21 @@
 let inputemail = document.getElementById("inputemail");
 let button = document.getElementById("button");
 let status = document.getElementById("status");
-let p1 = document.getElementById("p1");
+let r1 = document.getElementById("r1");
+r1.style.display = "none";
+let r2 = document.getElementById("r2");
+r2.style.display = "none";
+let r3 = document.getElementById("r3");
+r3.style.display = "none";
+let r4 = document.getElementById("r4");
+r4.style.display = "none";
+let r5 = document.getElementById("r5");
+r5.style.display = "none";
+let r6 = document.getElementById("r6");
+r6.style.display = "none";
+let r7 = document.getElementById("r7");
+r7.style.display = "none";
+
 let email = localStorage.getItem("userEmail");
 
 
@@ -46,8 +60,12 @@ body:JSON.stringify({
 })
 let data = await res.json();
 p1.textContent = data;
+r1.style.display = "block";
 
 
 }
 
 accept();
+
+
+
