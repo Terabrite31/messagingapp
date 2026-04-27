@@ -49,3 +49,5 @@ p1.textContent = data;
 
 
 }
+
+accept();
