@@ -59,9 +59,10 @@ body:JSON.stringify({
 })
 })
 let data = await res.json();
+if (data != "") {
 p1.textContent = data;
 r1.style.display = "block";
-
+}
 
 }
 
