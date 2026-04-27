@@ -1,7 +1,9 @@
 let inputemail = document.getElementById("inputemail");
 let button = document.getElementById("button");
 let status = document.getElementById("status");
+let p1 = document.getElementById("p1");
 let email = localStorage.getItem("userEmail");
+
 
 
 //add input
@@ -24,3 +26,26 @@ if (data == "the email doesnt exists") {
 }
 }
 button.onclick = addInput;
+
+
+
+
+
+
+
+//accept
+async function accept() {
+    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/accept", {
+method: "POST",
+headers: {
+    "Content-Type":"application/json"
+},
+body:JSON.stringify({
+    email: email
+})
+})
+let data = await res.json();
+p1.textContent = data;
+
+
+}
