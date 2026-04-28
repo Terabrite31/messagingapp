@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/frontend/signup/index.html"
+      "destination": "/frontend/login/signin.html"
     }
   ]
 }
