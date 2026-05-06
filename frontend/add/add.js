@@ -16,7 +16,7 @@ r6.style.display = "none";
 let r7 = document.getElementById("r7");
 r7.style.display = "none";
 
-let email = localStorage.getItem("userEmail");
+let email = localStorage.getItem("token");
 
 
 
@@ -28,7 +28,7 @@ headers: {
     "Content-Type":"application/json"
 },
 body:JSON.stringify({
-    email: email,
+    token: token,
     REmail: inputemail.value
 })
 })
