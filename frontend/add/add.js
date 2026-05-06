@@ -16,7 +16,7 @@ r6.style.display = "none";
 let r7 = document.getElementById("r7");
 r7.style.display = "none";
 
-let email = localStorage.getItem("token");
+let token = localStorage.getItem("token");
 
 
 
