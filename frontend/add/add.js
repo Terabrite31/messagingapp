@@ -55,7 +55,7 @@ headers: {
     "Content-Type":"application/json"
 },
 body:JSON.stringify({
-    email: email
+    token: token
 })
 })
 let data = await res.json();
