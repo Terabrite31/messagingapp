@@ -19,11 +19,13 @@ async function sendData() {
 
     let status = data.status;
     let username = data.username;
+    let token = data.token;
 
     if (status == "correct") {
         localStorage.setItem("userEmail", inputemail.value);
         localStorage.setItem("userPassword", inputpassword.value);
         localStorage.setItem("userUsername", username);
+        localStorage.setItem("token", token);
 
         window.location.href = "/frontend/messagingui/messaging.html";
     } else {

@@ -1,5 +1,24 @@
 let name = document.getElementById("name");
+const token = localStorage.getItem("token"); 
 
-let namee = localStorage.getItem("userUsername");
 
-name.textContent = namee;
+
+async function sendData() {
+    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/ui", {
+        method: "POST",
+        headers: {
+            "Content-Type":"application/json"
+     },
+    
+    body:JSON.stringify({
+       token: token
+    })
+})
+let data = await res.json();
+name.textContent = data.username;
+
+
+  
+    }
+
+    sendData();
