@@ -9,10 +9,8 @@ async function sendData() {
         headers: {
             "Content-Type":"application/json"
      },
-    
-    body:JSON.stringify({
-       token: token
-    })
+   
+    credentials: "include"
 })
 let data = await res.json();
 name.textContent = data.username;
