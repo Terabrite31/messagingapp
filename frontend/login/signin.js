@@ -31,3 +31,23 @@ async function sendData() {
 
 button.onclick = sendData;
 
+
+
+async function checkLogin() {
+  let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/autologin", {
+    method: "GET",
+    credentials: "include"
+  });
+
+  let data = await res.json();
+
+  if (data == "success") {
+    window.location.href = "/frontend/messagingui/messaging.html";
+  }
+}
+
+checkLogin();
+
+
+
+
