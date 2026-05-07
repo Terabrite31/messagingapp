@@ -18,13 +18,8 @@ async function sendData() {
     let data = await res.json();
 
     let status = data.status;
-    let token = data.token;
 
     if (status == "correct") {
-        localStorage.setItem("userEmail", inputemail.value);
-        localStorage.setItem("userPassword", inputpassword.value);
-        localStorage.setItem("token", token);
-
         window.location.href = "/frontend/messagingui/messaging.html";
     } else {
         statuss.textContent = "wrong email or password try again";
