@@ -30,7 +30,7 @@ name.onclick = namee;
 
 
 async function logoutt() {
-    let resp = fetch("https://messaging-app-backend-production-cd06.up.railway.app/logout", {
+    let resp = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/logout", {
   method: "GET",
   credentials: "include"
 
