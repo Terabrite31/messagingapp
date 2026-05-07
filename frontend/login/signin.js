@@ -6,6 +6,7 @@ let statuss = document.getElementById("status");
 async function sendData() {
     let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/loginapi", {
     method:"POST",
+    credentials: "include",
     headers:{
         "Content-Type":"application/json"
     },
