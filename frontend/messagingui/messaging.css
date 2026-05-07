@@ -26,9 +26,27 @@ body {
     border-radius: 30px;
 }
 
-#name {
-    position: absolute;
+#namediv {
+    position: relative;
     background-color: white;
+    width: 220px;
+    height: 50px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border-radius: 30px;
+    font-size: 30px;
+    top: 20px;
+    cursor: pointer;
+      transition: 0.3s;
+
+}
+
+
+
+#name {
+   background-color: white;
     width: 220px;
     height: 50px;
     left: 20px;
@@ -37,8 +55,20 @@ body {
     align-items: center;
     border-radius: 30px;
     font-size: 30px;
-    top:-10px;
+    top: 0px;
+    cursor: pointer;
 }
+
+#logout {
+    position: absolute;
+    height: 40px;
+    border-radius: 20px;
+    background-color: red;
+    top: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 
 #add {
     position: absolute;
