@@ -18,6 +18,7 @@ async function sendData() {
     let data = await res.json();
 
     let status = data.status;
+    console.log(sstatus);
 
     if (status == "correct") {
         window.location.href = "/frontend/messagingui/messaging.html";
