@@ -88,31 +88,14 @@ body {
     font-size: 50px;
 }
 
-.request {
-    position: relative;
-    height: 100px;
-    width: 500px;
-    background-color: white;
+
+.requestdiv {
+height: 150px;
+width: 400px;
+background-color: blue;
+
 }
 
-.name {
-    position: absolute;
-    font-size: 27px;
-    top: 0px;
-    left: 40px;
-}
 
-.Rbutton {
-    position: absolute;
-    top: 38px;
-    left: 400px;
-    background-color: red;
-}
 
-.Abutton {
-    position: absolute;
-    top: 38px;
-    left: 430px;
-    background-color: green;
-}
 
