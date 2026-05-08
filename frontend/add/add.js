@@ -1,8 +1,7 @@
 let inputemail = document.getElementById("inputemail");
 let button = document.getElementById("button");
 let status = document.getElementById("status");
-let r1 = document.getElementById("r1");
-r1.style.display = "none";
+let right = document.getElementById("right");
 
 
 let token = localStorage.getItem("token");
@@ -48,11 +47,30 @@ credentials: "include"
 let data = await res.json();
 let sender = data.data;
 
+for (let i = 0; i < sender.length; i++) {
+  const div = document.createElement("div")
+  const p = document.createElement("p")
+  const acceptBtn = document.createElement("button")
+  const declineBtn = document.createElement("button")
+
+  p.textContent = sender[i].sender
+  acceptBtn.textContent = "Accept"
+  declineBtn.textContent = "Decline"
+
+  div.appendChild(p)
+  div.appendChild(acceptBtn)
+  div.appendChild(declineBtn)
+
+  right.appendChild(div)
+}
+
 console.log(sender[0].sender)
 
 }
 
 accept();
+
+
 
 
 
