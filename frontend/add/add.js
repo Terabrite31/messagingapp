@@ -2,32 +2,8 @@ let inputemail = document.getElementById("inputemail");
 let button = document.getElementById("button");
 let status = document.getElementById("status");
 let right = document.getElementById("right");
-let token = localStorage.getItem("token");
-const div = document.createElement("div")
 
 
-  const senderemail = document.createElement("p")
-  const sendername = document.createElement("p")
-  const acceptBtn = document.createElement("button")
-  const declineBtn = document.createElement("button")
-
-  div.className = "requestdiv"
-  senderemail.className = "senderemail"
-  sendername.className = "sendername"
-  acceptBtn.className = "abutton"
-  declineBtn.className = "rbutton"
-
-  senderemail.textContent = "jasontorrevillas57@gmail.com"
-  sendername.textContent = "Jason"
-  acceptBtn.textContent = "Accept"
-  declineBtn.textContent = "Decline"
-  
-  div.appendChild(sendername)
-  div.appendChild(senderemail)
-  div.appendChild(acceptBtn)
-  div.appendChild(declineBtn)
-
-  right.appendChild(div)
 
 
 
@@ -69,9 +45,38 @@ headers: {
 credentials: "include"
 })
 let data = await res.json();
+  if (data === "no pending requests") {
+    console.log("no pending requests");
+    return;
+  }
+
 let sender = data.data;
 
+for (let i = 0; i < sender.length; i++) {
+  const div = document.createElement("div")
+  const senderemail = document.createElement("p")
+  const sendername = document.createElement("p")
+  const acceptBtn = document.createElement("button")
+  const declineBtn = document.createElement("button")
 
+  div.className = "requestdiv"
+  senderemail.className = "senderemail"
+  sendername.className = "sendername"
+  acceptBtn.className = "abutton"
+  declineBtn.className = "rbutton"
+
+  senderemail.textContent = sender[i].sender
+  sendername.textContent = sender[i].username
+  acceptBtn.textContent = "Accept"
+  declineBtn.textContent = "Decline"
+  
+  div.appendChild(sendername)
+  div.appendChild(senderemail)
+  div.appendChild(acceptBtn)
+  div.appendChild(declineBtn)
+
+  right.appendChild(div)
+}
 
 console.log(sender[0].sender)
 
