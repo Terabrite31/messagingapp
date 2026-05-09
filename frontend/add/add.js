@@ -4,20 +4,26 @@ let status = document.getElementById("status");
 let right = document.getElementById("right");
 let token = localStorage.getItem("token");
 const div = document.createElement("div")
-  const p = document.createElement("p")
+
+
+  const senderemail = document.createElement("p")
+  const sendername = document.createElement("p")
   const acceptBtn = document.createElement("button")
   const declineBtn = document.createElement("button")
 
   div.className = "requestdiv"
-  p.className = "requestemail"
-  acceptBtn.className = "acceptbtn"
+  senderemail.className = "senderemail"
+  sendername.className = "sendername"
+  acceptBtn.className = "abutton"
   declineBtn.className = "rbutton"
 
-  p.textContent = "gay"
+  senderemail.textContent = "jasontorrevillas57@gmail.com"
+  sendername.textContent = "Jason"
   acceptBtn.textContent = "Accept"
   declineBtn.textContent = "Decline"
-
-  div.appendChild(p)
+  
+  div.appendChild(sendername)
+  div.appendChild(senderemail)
   div.appendChild(acceptBtn)
   div.appendChild(declineBtn)
 
@@ -30,11 +36,11 @@ const div = document.createElement("div")
 async function addInput() {
     let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/add", {
 method: "POST",
+credentials: "include",
 headers: {
     "Content-Type":"application/json"
 },
 body:JSON.stringify({
-    token: token,
     REmail: inputemail.value
 })
 })

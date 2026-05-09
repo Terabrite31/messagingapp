@@ -53,7 +53,6 @@ body {
     left: 140px;
     height: 40px;
     width: 300px;
-
 }
 
 #button {
@@ -90,12 +89,49 @@ body {
 
 
 .requestdiv {
-height: 150px;
-width: 400px;
-background-color: blue;
+height: 120px;
+width: 480px;
+background-color: rgb(132, 218, 241);
+border-radius: 20px;
+position: relative;
 
 }
 
+.senderemail { 
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 157px;
+
+}
+
+.sendername {
+    font-size: 38px;
+    position: absolute;
+    top: -25px;
+    left: 157px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.abutton {
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.rbutton {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: red;
+}
 
 
 
