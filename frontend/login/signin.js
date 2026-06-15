@@ -22,7 +22,7 @@ async function sendData() {
     console.log(status);
 
     if (status == "correct") {
-        window.location.href = "https://messaging-app-backend-v8y1.onrender.com";
+        window.location.href = "/frontend/messagingui/messaging.html";
     } else {
         statuss.textContent = "wrong email or password try again";
 
