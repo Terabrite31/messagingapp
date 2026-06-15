@@ -10,7 +10,7 @@ let right = document.getElementById("right");
 
 //add input
 async function addInput() {
-    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/add", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/add", {
 method: "POST",
 credentials: "include",
 headers: {
@@ -37,7 +37,7 @@ button.onclick = addInput;
 
 //accept
 async function accept() {
-    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/accept", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/accept", {
 method: "POST",
 headers: {
     "Content-Type":"application/json"

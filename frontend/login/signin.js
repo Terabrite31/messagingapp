@@ -4,7 +4,7 @@ let button = document.getElementById("button");
 let statuss = document.getElementById("status");
 
 async function sendData() {
-    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/loginapi", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/loginapi", {
     method:"POST",
     credentials: "include",
     headers:{
@@ -22,7 +22,7 @@ async function sendData() {
     console.log(status);
 
     if (status == "correct") {
-        window.location.href = "/frontend/messagingui/messaging.html";
+        window.location.href = "https://messaging-app-backend-v8y1.onrender.com";
     } else {
         statuss.textContent = "wrong email or password try again";
 
@@ -34,7 +34,7 @@ button.onclick = sendData;
 
 
 async function checkLogin() {
-  let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/autologin", {
+  let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/autologin", {
     method: "GET",
     credentials: "include"
   });
