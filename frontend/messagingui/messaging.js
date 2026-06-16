@@ -54,7 +54,7 @@ logout.onclick = logoutt;
 
 
 async function sendData() {
-    let res = await fetch("https://messaging-app-backend-production-cd06.up.railway.app/ui", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/ui", {
         method: "POST",
          credentials: "include",
         headers: {
