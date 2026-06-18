@@ -75,6 +75,8 @@ credentials: "include",
   })
 })
 FR.textContent = this.dataset.email + " accepted";
+acceptBtn.style.display = "none";
+declineBtn.style.display = "none";
   }
   div.className = "requestdiv"
   senderemail.className = "senderemail"
