@@ -62,6 +62,7 @@ for (let i = 0; i < sender.length; i++) {
 
   acceptBtn.dataset.email = sender[i].username;
   acceptBtn.dataset.number = i;
+  declineBtn.dataset.email = sender[i].username;
 
 
   acceptBtn.onclick = async function acceptBE() {
