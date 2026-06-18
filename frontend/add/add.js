@@ -39,7 +39,7 @@ button.onclick = addInput;
 
 //accept
 async function accept() {
-    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/accept", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/request", {
 method: "POST",
 headers: {
     "Content-Type":"application/json"
