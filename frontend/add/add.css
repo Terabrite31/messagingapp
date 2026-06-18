@@ -134,19 +134,22 @@ position: relative;
 }
 
 .stat {
-    position: absolute;
-    bottom: 10px;
-    left: 200px;
-    width: 100px;
-    height: 25px;
-    border-radius: 20px;
-    background-color: white;
-      display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
 
-  margin: 0;      
-   
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
