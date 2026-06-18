@@ -62,7 +62,7 @@ for (let i = 0; i < sender.length; i++) {
 
   acceptBtn.dataset.email = sender[i].username;
   acceptBtn.dataset.number = i;
-  declineBtn.dataset.email = sender[i].username;
+  declineBtn.dataset.remail = sender[i].username;
 
 
   acceptBtn.onclick = async function acceptBE() {
@@ -87,7 +87,7 @@ declineBtn.style.display = "none";
 credentials: "include",
       method: "POST"
 })
-FR.textContent = this.dataset.email + " declined";
+FR.textContent = this.dataset.remail + " declined";
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
 
