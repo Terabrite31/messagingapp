@@ -52,7 +52,6 @@ let data = await res.json();
   }
 }
 let sender = data.data;
-let 
 
 for (let i = 0; i < sender.length; i++) {
   const div = document.createElement("div")
