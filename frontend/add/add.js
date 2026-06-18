@@ -87,7 +87,7 @@ declineBtn.style.display = "none";
 credentials: "include",
       method: "POST"
 })
-FR.textContent = this.dataset.remail + " declined";
+FR.textContent = this.dataset.remail + " chupapi";
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
 
