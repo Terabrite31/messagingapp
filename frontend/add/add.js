@@ -77,6 +77,24 @@ credentials: "include",
 FR.textContent = this.dataset.email + " accepted";
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
+
+
+  }
+
+    declineBtn.onclick = async function declineBE() {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/acceptBE", {
+ headers: {"Content-Type":"application/json"},
+credentials: "include",
+      method: "POST",
+         body: JSON.stringify({
+  acceptemail: this.dataset.email
+  })
+})
+FR.textContent = this.dataset.email + " declined";
+acceptBtn.style.display = "none";
+declineBtn.style.display = "none";
+
+
   }
   div.className = "requestdiv"
   senderemail.className = "senderemail"
