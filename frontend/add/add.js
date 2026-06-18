@@ -52,6 +52,7 @@ let data = await res.json();
   }
 }
 let sender = data.data;
+let 
 
 for (let i = 0; i < sender.length; i++) {
   const div = document.createElement("div")
@@ -60,9 +61,9 @@ for (let i = 0; i < sender.length; i++) {
   const acceptBtn = document.createElement("button")
   const declineBtn = document.createElement("button")
 
-  acceptBtn.dataset.email = sender[i].sender;
+  acceptBtn.dataset.email = sender[i].username;
   acceptBtn.dataset.number = i;
-  declineBtn.dataset.email = sender[i].sender;
+  declineBtn.dataset.email = sender[i].username;
   declineBtn.dataset.number = i;
 
   acceptBtn.onclick = async function acceptBE() {
