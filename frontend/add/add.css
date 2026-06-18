@@ -141,8 +141,14 @@ position: relative;
     height: 25px;
     border-radius: 20px;
     background-color: white;
+      display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+
+  margin: 0;      
    
 }
+
 
 
 
