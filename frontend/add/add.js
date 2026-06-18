@@ -50,7 +50,7 @@ let data = await res.json();
     console.log("no pending requests");
     return;
   }
-}
+
 let sender = data.data;
 
 for (let i = 0; i < sender.length; i++) {
@@ -98,7 +98,7 @@ FR.textContent = this.dataset.email + " accepted";
 }
 
 console.log(sender[0].sender)
-
+}
 
 accept();
 
