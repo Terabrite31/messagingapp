@@ -62,8 +62,7 @@ for (let i = 0; i < sender.length; i++) {
 
   acceptBtn.dataset.email = sender[i].username;
   acceptBtn.dataset.number = i;
-  declineBtn.dataset.email = sender[i].username;
-  declineBtn.dataset.number = i;
+
 
   acceptBtn.onclick = async function acceptBE() {
     let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/acceptBE", {
@@ -85,10 +84,7 @@ declineBtn.style.display = "none";
     let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/acceptBE", {
  headers: {"Content-Type":"application/json"},
 credentials: "include",
-      method: "POST",
-         body: JSON.stringify({
-  acceptemail: this.dataset.email
-  })
+      method: "POST"
 })
 FR.textContent = this.dataset.email + " declined";
 acceptBtn.style.display = "none";
