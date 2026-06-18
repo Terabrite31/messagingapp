@@ -2,6 +2,7 @@ let inputemail = document.getElementById("inputemail");
 let button = document.getElementById("button");
 let status = document.getElementById("status");
 let right = document.getElementById("right");
+let FR = document.getElementById("friendrequest");
 
 
 
@@ -49,7 +50,7 @@ let data = await res.json();
     console.log("no pending requests");
     return;
   }
-
+}
 let sender = data.data;
 
 for (let i = 0; i < sender.length; i++) {
@@ -59,11 +60,29 @@ for (let i = 0; i < sender.length; i++) {
   const acceptBtn = document.createElement("button")
   const declineBtn = document.createElement("button")
 
+  acceptBtn.dataset.email = sender[i].sender;
+  acceptBtn.dataset.number = i;
+  declineBtn.dataset.email = sender[i].sender;
+  declineBtn.dataset.number = i;
+
+  acceptBtn.onclick = async function acceptBE() {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/acceptBE", {
+ headers: {"Content-Type":"application/json"},
+credentials: "include",
+      method: "POST",
+         body: JSON.stringify({
+  acceptemail: this.dataset.email
+  })
+})
+FR.textContent = this.dataset.email + " accepted";
+  }
   div.className = "requestdiv"
   senderemail.className = "senderemail"
   sendername.className = "sendername"
   acceptBtn.className = "abutton"
   declineBtn.className = "rbutton"
+
+
 
   senderemail.textContent = sender[i].sender
   sendername.textContent = sender[i].username
@@ -80,14 +99,7 @@ for (let i = 0; i < sender.length; i++) {
 
 console.log(sender[0].sender)
 
-}
 
 accept();
-
-
-
-
-
-
 
 
