@@ -70,7 +70,7 @@ for (let i = 0; i < sender.length; i++) {
 
 
   acceptBtn.onclick = async function acceptBE() {
-    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/acceptBE", {
+    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/accept", {
  headers: {"Content-Type":"application/json"},
 credentials: "include",
       method: "POST",
