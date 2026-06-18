@@ -74,7 +74,7 @@ credentials: "include",
   acceptemail: this.dataset.email
   })
 })
-FR.textContent = this.dataset.email + " chupapi";
+FR.textContent = this.dataset.email + " accepted";
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
 
@@ -87,7 +87,7 @@ declineBtn.style.display = "none";
 credentials: "include",
       method: "POST"
 })
-FR.textContent = this.dataset.remail + " chupapi";
+FR.textContent = this.dataset.remail + " declined";
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
 
