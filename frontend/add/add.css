@@ -138,20 +138,19 @@ position: relative;
   bottom: 10px;
   left: 200px;
 
-  width: 100px;
+  width: 140px;
   height: 25px;
   border-radius: 20px;
   background-color: white;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 
 
