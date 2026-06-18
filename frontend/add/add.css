@@ -133,5 +133,18 @@ position: relative;
     background-color: red;
 }
 
+.stat {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 

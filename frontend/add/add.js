@@ -9,6 +9,7 @@ let FR = document.getElementById("friendrequest");
 
 
 
+
 //add input
 async function addInput() {
     let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/add", {
@@ -59,6 +60,8 @@ for (let i = 0; i < sender.length; i++) {
   const sendername = document.createElement("p")
   const acceptBtn = document.createElement("button")
   const declineBtn = document.createElement("button")
+  const stat = document.createElement("stat");
+  stat.style.display = "none";
 
   acceptBtn.dataset.email = sender[i].username;
   acceptBtn.dataset.number = i;
@@ -74,9 +77,11 @@ credentials: "include",
   acceptemail: this.dataset.email
   })
 })
-FR.textContent = this.dataset.email + " accepted";
+
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
+stat.style.display = "block";
+stat.textContent = "accepted";
 
 
   }
@@ -87,9 +92,11 @@ declineBtn.style.display = "none";
 credentials: "include",
       method: "POST"
 })
-FR.textContent = this.dataset.remail + " declined";
+
 acceptBtn.style.display = "none";
 declineBtn.style.display = "none";
+stat.style.display = "block";
+stat.textContent = "declined";
 
 
   }
@@ -110,6 +117,7 @@ declineBtn.style.display = "none";
   div.appendChild(senderemail)
   div.appendChild(acceptBtn)
   div.appendChild(declineBtn)
+  div.appendChild(stat);
 
   right.appendChild(div)
 }
