@@ -64,6 +64,7 @@ for (let i = 0; i < sender.length; i++) {
   stat.style.display = "none";
 
   acceptBtn.dataset.email = sender[i].username;
+  acceptBtn.dataset.senderemail = sender[i].sender;
   acceptBtn.dataset.number = i;
   declineBtn.dataset.remail = sender[i].username;
 
@@ -74,7 +75,7 @@ for (let i = 0; i < sender.length; i++) {
 credentials: "include",
       method: "POST",
          body: JSON.stringify({
-  acceptemail: this.dataset.email
+  acceptemail: this.dataset.senderemail
   })
 })
 
