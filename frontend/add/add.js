@@ -105,6 +105,7 @@ stat.textContent = "declined";
   sendername.className = "sendername"
   acceptBtn.className = "abutton"
   declineBtn.className = "rbutton"
+  stat.className = "stat"
 
 
 
