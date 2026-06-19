@@ -95,16 +95,19 @@ for (let i = 0; i < friendss.length; i++) {
 const listdiv = document.createElement("div")
 const friendname = document.createElement("p")
 const message = document.createElement("p")
+const buttonnn = document.createElement("button")
 
 listdiv.className = "messagediv";
 friendname.className = "friend";
 message.className = "message";
+buttonnn.className = "buttonnn";
 
 friendname.textContent = friendss[i].friendemail;
 message.textContent = "no message yet"
 
 listdiv.appendChild(friendname);
 listdiv.appendChild(message);
+listdiv.appendChild(buttonnn);
 
 
 
