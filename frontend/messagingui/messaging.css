@@ -148,3 +148,10 @@ body {
     margin-left:440px;
     border-radius: 30px;
 }
+
+#who {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    font-size: 60px;
+}

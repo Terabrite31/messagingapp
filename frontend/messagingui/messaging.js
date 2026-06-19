@@ -74,7 +74,7 @@ name.textContent = data.username;
 
 
 
-
+let currenttalkingto = null;
 
 
 
@@ -97,6 +97,9 @@ const friendname = document.createElement("p")
 const message = document.createElement("p")
 const buttonnn = document.createElement("button")
 
+let talkingto = friendss[i].friendemail;
+currenttalkingto = talkingto;
+
 listdiv.className = "messagediv";
 friendname.className = "friend";
 message.className = "message";
@@ -104,6 +107,22 @@ buttonnn.className = "buttonnn";
 
 friendname.textContent = friendss[i].friendemail;
 message.textContent = "no message yet"
+
+buttonnn.onclick = async function() {
+  let res = await fetch("https://api.konnn.com/click", {
+method: "POST",
+credentials: "include",
+headers: {
+    "Content-Type":"application/json"
+},
+body: JSON.stringify({
+  friendemail: talkingto
+})
+})
+let data = await res.json();
+
+}
+
 
 listdiv.appendChild(friendname);
 listdiv.appendChild(message);
