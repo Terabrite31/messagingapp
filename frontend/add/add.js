@@ -12,7 +12,7 @@ let FR = document.getElementById("friendrequest");
 
 //add input
 async function addInput() {
-    let res = await fetch("api.konnn.com/add", {
+    let res = await fetch("https://api.konnn.com/add", {
 method: "POST",
 credentials: "include",
 headers: {
@@ -39,7 +39,7 @@ button.onclick = addInput;
 
 //accept
 async function accept() {
-    let res = await fetch("api.konnn.com/request", {
+    let res = await fetch("https://api.konnn.com/request", {
 method: "POST",
 headers: {
     "Content-Type":"application/json"
@@ -70,7 +70,7 @@ for (let i = 0; i < sender.length; i++) {
 
 
   acceptBtn.onclick = async function acceptBE() {
-    let res = await fetch("api.konnn.com/accept", {
+    let res = await fetch("https://api.konnn.com/accept", {
  headers: {"Content-Type":"application/json"},
 credentials: "include",
       method: "POST",
@@ -88,7 +88,7 @@ stat.textContent = "accepted";
   }
 
     declineBtn.onclick = async function declineBE() {
-    let res = await fetch("api.konnn.com/acceptBE", {
+    let res = await fetch("https://api.konnn.com/acceptBE", {
  headers: {"Content-Type":"application/json"},
 credentials: "include",
       method: "POST"
