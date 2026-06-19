@@ -33,6 +33,9 @@ if (data == "the email doesnt exists") {
   else if (data == "already friends") {
     status.textContent = "already friends";
 }
+else if (data == "you cant add yourself") {
+    status.textContent = "you cant add yourself";
+}
 }
 button.onclick = addInput;
 
