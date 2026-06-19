@@ -122,8 +122,8 @@ body: JSON.stringify({
 })
 })
 let data = await res.json();
-let username = data.username;
-who.textContent = username;
+let usernameee = data.username;
+who.textContent = usernameee;
 
 }
 
