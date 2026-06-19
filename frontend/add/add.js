@@ -30,6 +30,9 @@ if (data == "the email doesnt exists") {
 } else if (data == "request already sent") {
     status.textContent = "request already sent";
 }
+  else if (data == "already friends") {
+    status.textContent = "already friends";
+}
 }
 button.onclick = addInput;
 
