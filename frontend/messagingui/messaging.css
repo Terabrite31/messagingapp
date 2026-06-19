@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, rgb(224, 230, 184), rgb(255, 255, 255));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ body {
     height: 759px;
     width: 1030px;
     top:0px;
-    background-color: rgb(247, 158, 224);
+    background-color: rgb(255, 255, 255);
     margin-left:440px;
     border-radius: 30px;
 }
