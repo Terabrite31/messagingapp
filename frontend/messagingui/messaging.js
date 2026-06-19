@@ -3,7 +3,7 @@ let namediv = document.getElementById("namediv");
 let logout = document.getElementById("logout");
 let who = document.getElementById("who");
 logout.style.display = "none";
-who.textContent = currenttalkingto;
+
 
 let num = 0;
 
@@ -76,7 +76,7 @@ name.textContent = data.username;
 
 
 
-let currenttalkingto = null;
+
 
 
 
@@ -100,7 +100,7 @@ const message = document.createElement("p")
 const buttonnn = document.createElement("button")
 
 let talkingto = friendss[i].friendemail;
-currenttalkingto = talkingto;
+who.textContent = talkingto;
 
 listdiv.className = "messagediv";
 friendname.className = "friend";
