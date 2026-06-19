@@ -4,7 +4,7 @@ let button = document.getElementById("button");
 let statuss = document.getElementById("status");
 
 async function sendData() {
-    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/loginapi", {
+    let res = await fetch("api.konnn.com/loginapi", {
     method:"POST",
     credentials: "include",
     headers:{
@@ -34,7 +34,7 @@ button.onclick = sendData;
 
 
 async function checkLogin() {
-  let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/autologin", {
+  let res = await fetch("api.konnn.com/autologin", {
     method: "GET",
     credentials: "include"
   });

@@ -30,7 +30,7 @@ name.onclick = namee;
 
 
 async function logoutt() {
-    let resp = await fetch("https://messaging-app-backend-v8y1.onrender.com/logout", {
+    let resp = await fetch("api.konnn.com/logout", {
   method: "GET",
   credentials: "include"
 
@@ -54,7 +54,7 @@ logout.onclick = logoutt;
 
 
 async function sendData() {
-    let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/ui", {
+    let res = await fetch("api.konnn.com/ui", {
         method: "POST",
          credentials: "include",
         headers: {
@@ -80,7 +80,7 @@ name.textContent = data.username;
 
 
     async function messagelist() {
-        let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/messagelist", {
+        let res = await fetch("api.konnn.com/messagelist", {
    method: "POST",
    credentials: "include",
    headers: {

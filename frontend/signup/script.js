@@ -13,7 +13,7 @@ verification.style.display = "none";
 
 
 async function request() {
-  let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/test-email", {
+  let res = await fetch("api.konnn.com/test-email", {
     method:"POST",
     headers:{
       "Content-Type":"application/json"
@@ -36,7 +36,7 @@ async function request() {
 button.onclick = request;
 
 async function request2() {
-  let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/api2", {
+  let res = await fetch("api.konnn.com/api2", {
     method:"POST",
     headers:{
       "Content-Type":"application/json"
