@@ -5,6 +5,8 @@ let who = document.getElementById("who");
 let inputmessage = document.getElementById("inputmessage");
 let send = document.getElementById("send");
 logout.style.display = "none";
+inputmessage.style.display = "none";
+send.style.display = "none";
 
 send.onclick = async function() {
   inputmessage.value = "";
@@ -117,6 +119,8 @@ friendname.textContent = friendss[i].friendemail;
 message.textContent = "no message yet"
 
 buttonnn.onclick = async function() {
+  inputmessage.style.display = "block";
+  send.style.display = "block";
   let res = await fetch("https://api.konnn.com/click", {
 method: "POST",
 credentials: "include",
