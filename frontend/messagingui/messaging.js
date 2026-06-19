@@ -100,7 +100,7 @@ const message = document.createElement("p")
 const buttonnn = document.createElement("button")
 
 let talkingto = friendss[i].friendemail;
-who.textContent = talkingto;
+
 
 listdiv.className = "messagediv";
 friendname.className = "friend";
@@ -122,6 +122,7 @@ body: JSON.stringify({
 })
 })
 let data = await res.json();
+who.textContent = talkingto;
 
 }
 
