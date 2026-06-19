@@ -27,6 +27,8 @@ if (data == "the email doesnt exists") {
    status.textContent = "email doesnt exists";
 } else if(data == "sent") {
     status.textContent = "sent";
+} else if (data == "request already sent") {
+    status.textContent = "request already sent";
 }
 }
 button.onclick = addInput;
