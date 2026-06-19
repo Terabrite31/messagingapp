@@ -71,3 +71,52 @@ name.textContent = data.username;
     }
 
     sendData();
+
+
+
+
+
+
+
+
+    async function messagelist() {
+        let res = await fetch("https://messaging-app-backend-v8y1.onrender.com/messagelist", {
+   method: "POST",
+   credentials: "include",
+   headers: {
+    "Content-Type":"application/json"
+   } 
+    })
+    let data = await res.json();
+let friendss = data.data;
+
+
+for (let i = 0; i < friendss.length; i++) {
+const listdiv = document.createElement("div")
+const friendname = document.createElement("p")
+const message = document.createElement("p")
+
+listdiv.className = "messagediv";
+friendname.className = "friend";
+message.className = "message";
+
+friendname.textContent = friendss[i].friendemail;
+message.textContent = "no message yet"
+
+listdiv.appendChild(friendname);
+listdiv.appendChild(message);
+
+
+
+let left = document.getElementById("left");
+left.appendChild(listdiv);
+  }
+
+  }
+
+
+  messagelist();
+  
+
+
+
