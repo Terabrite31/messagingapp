@@ -122,7 +122,8 @@ body: JSON.stringify({
 })
 })
 let data = await res.json();
-who.textContent = talkingto;
+let username = data.username;
+who.textContent = username;
 
 }
 
