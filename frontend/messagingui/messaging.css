@@ -156,6 +156,7 @@ body {
     left: 30px;
     font-size: 60px;
     background-color: rgb(160, 158, 158);
+    border-radius: 30px;
 }
 
 #inputmessage {
