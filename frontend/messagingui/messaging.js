@@ -2,7 +2,13 @@ let name = document.getElementById("name");
 let namediv = document.getElementById("namediv");
 let logout = document.getElementById("logout");
 let who = document.getElementById("who");
+let inputmessage = document.getElementById("inputmessage");
+let send = document.getElementById("send");
 logout.style.display = "none";
+
+send.onclick = async function() {
+  inputmessage.value = "";
+}
 
 
 let num = 0;
