@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding-top: 150px;
     gap: 8px;
+    overflow-y: auto;
     
 }
 
@@ -154,4 +155,24 @@ body {
     top: -50px;
     left: 30px;
     font-size: 60px;
+}
+
+#inputmessage {
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    height: 30px;
+    width: 900px;
+    border-radius: 20px;
+}
+
+#send {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    height: 30px;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 239, 9);
 }
