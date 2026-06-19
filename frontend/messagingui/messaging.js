@@ -1,7 +1,9 @@
 let name = document.getElementById("name");
 let namediv = document.getElementById("namediv");
 let logout = document.getElementById("logout");
+let who = document.getElementById("who");
 logout.style.display = "none";
+who.textContent = currenttalkingto;
 
 let num = 0;
 
