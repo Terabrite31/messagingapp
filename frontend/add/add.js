@@ -25,13 +25,17 @@ body:JSON.stringify({
 let data = await res.json();
 if (data == "the email doesnt exists") {
    status.textContent = "email doesnt exists";
+   status.style.color = "red";
 } else if(data == "sent") {
     status.textContent = "sent";
+    status.style.color = "green";
 } else if (data == "request already sent") {
     status.textContent = "request already sent";
+    status.style.color = "red";
 }
   else if (data == "already friends") {
     status.textContent = "already friends";
+    status.style.color = "red";
 }
 else if (data == "you cant add yourself") {
     status.textContent = "you cant add yourself";
