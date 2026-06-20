@@ -12,6 +12,8 @@ send.onclick = async function() {
   inputmessage.value = "";
 }
 
+let whoo = null;
+
 
 let num = 0;
 
@@ -134,6 +136,7 @@ body: JSON.stringify({
 let data = await res.json();
 let usernameee = data.username;
 who.textContent = usernameee;
+whoo = talkingto;
 
 }
 
@@ -156,3 +159,19 @@ left.appendChild(listdiv);
 
 
 
+
+
+  send.onclick = async function() {
+    let res = await fetch("https://api.konnn.com/sendmessage", {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify({
+        message: inputmessage.value,
+        friendemail: whoo
+      })
+    })
+    let data = await res.json();
+  }
